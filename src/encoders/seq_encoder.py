@@ -19,7 +19,7 @@ class SeqEncoder(Encoder):
     def get_default_hyperparameters(cls) -> Dict[str, Any]:
         encoder_hypers = { 'token_vocab_size': 10000,
                            'token_vocab_count_threshold': 10,
-                           'token_embedding_size': 128,
+                           'token_embedding_size': 512,
 
                            'use_subtokens': False,
                            'mark_subtoken_end': False,
