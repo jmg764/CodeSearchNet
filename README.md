@@ -87,7 +87,7 @@ The Neural Bag of Words baseline model used by CodeSearchNet is a fully connecte
 <img src="images/embeddings.png"  alt="drawing" width="450"/>
 </p>
 
-Figure from the CodeSearchNet Challenge [paper][https://arxiv.org/abs/1909.09436].
+Figure from the CodeSearchNet Challenge [paper](https://arxiv.org/abs/1909.09436).
 
 The authors of the original CodeNetChallenge implemented the NBOW using a token embedding embedding size of 128, but here we increased that value to 512 with the hope that it might improve model performance. As mentioned in this [paper](https://papers.nips.cc/paper/7368-on-the-dimensionality-of-word-embedding.pdf) by Zi Yin and Yuanyuan Shen, the impact of dimensionality on word embedding has not yet been fully understood. However, in their study, Yin and Shen reveal that there exists a bias-variance trade-off in dimensionality selection for word embeddings: word embeddings with small dimensionality underfit while those with large dimensionality overfit. Thus, word embedding size should influence the performance of a given model. By increasing the token embedding size significantly, we hoped to gain insight into how larger word embedding sizes affect performance. 
 
