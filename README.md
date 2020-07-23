@@ -6,7 +6,7 @@
 
 # Semantic Code Search (CodeSearchNet Challenge)
 
-As a project for the CS-GY-6613 Artificial Intelligence course at NYU Tandon School of Engineering, this extension of the [CodeSearchNet Challenge](https://app.wandb.ai/github/codesearchnet/benchmark) focuses on the Neural Bag of Words baseline model. 
+This is a project for the CS-GY-6613 Artificial Intelligence course at NYU Tandon School of Engineering focusing on improving the Neural Bag of Words baseling model found in [CodeSearchNet](https://arxiv.org/abs/1909.09436).
 
 
 ## Background
@@ -16,7 +16,7 @@ Searching for code on GitHub is currently limited to lexical search in which the
 
 ## Project Overview
 
-[CodeSearchNet](https://arxiv.org/abs/1909.09436), is a collection of datasets and benchmarks that explore the problem of code retrieval using natural language. This research is a continuation of some ideas presented in this [blog post](https://githubengineering.com/towards-natural-language-semantic-code-search/) and is a joint collaboration between GitHub and the [Deep Program Understanding](https://www.microsoft.com/en-us/research/project/program/) group at [Microsoft Research - Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/). The researchers aim to provide a platform for community research on semantic code search via the following: 
+CodeSearchNet, is a collection of datasets and benchmarks that explore the problem of code retrieval using natural language. This research is a continuation of some ideas presented in this [blog post](https://githubengineering.com/towards-natural-language-semantic-code-search/) and is a joint collaboration between GitHub and the [Deep Program Understanding](https://www.microsoft.com/en-us/research/project/program/) group at [Microsoft Research - Cambridge](https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/). The researchers aim to provide a platform for community research on semantic code search via the following: 
 
   1. Instructions for obtaining large corpora of relevant data
   2. Open source code for a range of baseline models, along with pre-trained weights
