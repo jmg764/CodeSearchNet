@@ -119,12 +119,14 @@ A fellow student was kind enough to create a [guide](https://github.com/aobject/
   ```
 ## Results
 
+The following chart provides Mean Reciprocal Rank (MRR) values on the test set of the CodeSearchNet Corpus using both the original NBOW model and the modified NBOW model. In general, MRR is used to rank possible responses to a sample of queries, ordered by probability of correctness. Here, given a documentation comment as a query, NBOW ranks the correct code snippet among 999 distractor snippets. An accurate model is capable of ranking the correct code snippet highly among the distractor snippets. If it is able to do this consistently it will have a high MRR. Thus, high test accuracy corresponds to a high MRR.
 
+| Model | Go | Java | JS | PHP | Python | Ruby | Avg | 
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
+**Original** | 0.6409 | 0.5140 | 0.4607 | 0.4835 | **0.5809** | 0.4285 | 0.6167 |
+**Modified** | **0.6687** | **0.5618** | **0.4887** | 0.5342 | **0.6333** | **0.4687** | **0.6561** | 
 
-<img src="images/NBOW_baseline_results.png"  alt="drawing" width="700"/>
-
-
-<img src="images/NBOW_512_results.png"  alt="drawing" width="700"/>
+Since 
 
 
 
