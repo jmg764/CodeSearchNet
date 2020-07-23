@@ -121,10 +121,10 @@ A fellow student was kind enough to create a [guide](https://github.com/aobject/
 
 
 
-<img src="images/nbow_baseline_results.png"  alt="drawing" width="700"/>
+<img src="images/NBOW_baseline_results.png"  alt="drawing" width="700"/>
 
 
-<img src="images/nbow_512_results.png"  alt="drawing" width="700"/>
+<img src="images/NBOW_512_results.png"  alt="drawing" width="700"/>
 
 
 
