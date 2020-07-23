@@ -123,12 +123,10 @@ The following chart provides Mean Reciprocal Rank (MRR) values on the test set o
 
 | Model | Go | Java | JS | PHP | Python | Ruby | Avg | 
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
-**Original** | 0.6409 | 0.5140 | 0.4607 | 0.4835 | **0.5809** | 0.4285 | 0.6167 |
-**Modified** | **0.6687** | **0.5618** | **0.4887** | 0.5342 | **0.6333** | **0.4687** | **0.6561** | 
+**Original** | 0.6409 | 0.5140 | 0.4607 | 0.4835 | 0.5809 | 0.4285 | 0.6167 |
+**Modified** | 0.6687 | 0.5618 | 0.4887 | 0.5342 | 0.6333 | 0.4687 | 0.6561 | 
 
-Since 
-
-
+Since the modified NBOW model produced higher MRR values for every language, raising the ```token_embedding_size``` hyperparameter from 128 to 512 seems to have resulted in an improved model. Thus, it may be favorable to experiment with other values in the future in order to find the optimal ```token_embedding_size``` value. Doing so may also provide insight into the bias-variance tradeoff in word embedding dimensionality as alluded to by Yin and Shen.
 
 ## Licenses
 
