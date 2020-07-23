@@ -6,7 +6,7 @@
 
 # Semantic Code Search (CodeSearchNet Challenge)
 
-As a project for the CS-GY-6613 Artificial Intelligence course at NYU Tandon School of Engineering, this extension of the [CodeSearchNet Challenge](https://app.wandb.ai/github/codesearchnet/benchmark) aims to improve upon the Neural Bag of Words baseline model. 
+As a project for the CS-GY-6613 Artificial Intelligence course at NYU Tandon School of Engineering, this extension of the [CodeSearchNet Challenge](https://app.wandb.ai/github/codesearchnet/benchmark) focuses on the Neural Bag of Words baseline model. 
 
 
 ## Background
@@ -25,7 +25,7 @@ Searching for code on GitHub is currently limited to lexical search in which the
 
 The researchers hope that CodeSearchNet is a step towards engaging with the broader machine learning and NLP community regarding the relationship between source code and natural language. More context regarding the motivation for this problem is in this [technical report][https://arxiv.org/abs/1909.09436].
 
-The initial CodeSearchNet Challenge implemented a range of baseline models including Neural Bag of Words (NBOW), Bidirectional RNN models, 1D Convolutional Neural Network, and Self-Attention. **For our project, we focused on improving NBOW by incorporating concatenation pooling.**
+The initial CodeSearchNet Challenge implemented a range of baseline models including Neural Bag of Words (NBOW), Bidirectional RNN models, 1D Convolutional Neural Network, and Self-Attention. **For our project, we sought to improve NBOW by increasing the ```token_embedding_size``` hyperparameter from 128 to 512.**
 
 ## Data Schema & Format
 
@@ -89,9 +89,7 @@ The Neural Bag of Words baseline model used by CodeSearchNet is a fully connecte
 
 Figure from the CodeSearchNet Challenge [paper][https://arxiv.org/abs/1909.09436].
 
-The authors of the original CodeNetChallenge implemented weighted mean pooling, but here we implement concatenation pooling which combines the mean and max pooling into one:
-
-<img src="images/concat_code.png"  alt="drawing" width="800"/>
+The authors of the original CodeNetChallenge implemented the NBOW using a token embedding embedding size of 128, but here we increased that value to 512 with the hope that it might improve model performance. As mentioned in this [paper](https://papers.nips.cc/paper/7368-on-the-dimensionality-of-word-embedding.pdf) by Zi Yin and Yuanyuan Shen, the impact of dimensionality on word embedding has not yet been fully understood. However, in their study, Yin and Shen reveal that there exists a bias-variance trade-off in dimensionality selection for word embeddings: word embeddings with small dimensionality underfit while those with large dimensionality overfit. Thus, word embedding size should influence the performance of a given model. By increasing the token embedding size significantly, we hoped to gain insight into how larger word embedding sizes affect performance. 
 
 ## Setup
 
@@ -119,6 +117,16 @@ A fellow student was kind enough to create a [guide](https://github.com/aobject/
   # generate predictions for model evaluation
   python predict.py -r github/CodeSearchNet/0123456 # this is the org/project_name/run_id
   ```
+## Results
+
+
+
+<img src="images/nbow_baseline_results.png"  alt="drawing" width="700"/>
+
+
+<img src="images/nbow_512_results.png"  alt="drawing" width="700"/>
+
+
 
 ## Licenses
 
