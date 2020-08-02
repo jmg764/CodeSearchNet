@@ -6,7 +6,7 @@
 
 # Semantic Code Search (CodeSearchNet Challenge)
 
-This is a project for the CS-GY-6613 Artificial Intelligence course at NYU Tandon School of Engineering focusing on improving the Neural Bag of Words baseline model found in [CodeSearchNet](https://arxiv.org/abs/1909.09436).
+This is a project for the CS-GY-6613 Artificial Intelligence course at NYU Tandon School of Engineering focusing on improving the Neural Bag of Words baseline model found in [CodeSearchNet](https://arxiv.org/abs/1909.09436). The following is based off of the [original README.md](https://github.com/github/CodeSearchNet) but contains more information on theory, setup, and the results obtained for this specific project.
 
 
 ## Background
